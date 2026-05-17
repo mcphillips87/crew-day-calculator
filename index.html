@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Crew Day Calculator</title>
+
+  <link rel="stylesheet" href="./static/style.css">
+
+  <link rel="manifest" href="./manifest.webmanifest">
+
+  <meta name="theme-color" content="#111827">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <link rel="apple-touch-icon" href="static/icons/icon-192.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="static/icons/icon-512.png">
+
+  <link rel="apple-touch-startup-image" href="static/icons/splash.png">
+</head>
+<body>
+  <main class="app">
+    <h1>Crew Day Calculator</h1>
+    <p class="subtitle">Day/Night transition crew day calculator</p>
+
+    <section class="card">
+      <label>Mission Type</label>
+        <select id="scenario" onchange="updateSunLabel()">
+            <option value="day_to_night" selected>Day into Night</option>
+            <option value="night_to_day">Night into Day</option>
+        </select>
+
+      <label id="sunLabel">Sunset (HHMM)</label>
+      <input id="sunset" type="number" placeholder="1800">
+
+      <label>Main Engine Start (HHMM)</label>
+      <input id="mes" type="number" placeholder="0000">
+
+      <button onclick="calculateCrewDay()">CALCULATE CREW DAY</button>
+    </section>
+
+    <section class="result card">
+      <h2 id="result">Result will show here</h2>
+      <p id="details"></p>
+    </section>
+
+    <button id="themeToggle" class="secondary-btn" onclick="toggleThemeMode()">
+      DAY / NIGHT MODE
+    </button>
+
+    <div class="footer-bar">
+      <p id="modeLabel" class="footer-mode">DAY MODE</p>
+      <p class="version">v0.1 local test build</p>
+    </div>
+
+  </main>
+
+  <script src="./static/app.js"></script>
+</body>
+</html>

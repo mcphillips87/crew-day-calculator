@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0f172a;
+  color: white;
+}
+
+.app {
+  max-width: 480px;
+  margin: auto;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: #1e293b;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+label {
+  display: block;
+  margin-top: 14px;
+  margin-bottom: 6px;
+  color: #cbd5e1;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+}
+
+button {
+  margin-top: 20px;
+  background: #38bdf8;
+  color: #082f49;
+  font-weight: bold;
+}
+
+.result h2 {
+  margin-top: 0;
+}
+
+/* Bridge-friendly upgrades */
+.app {
+  max-width: 520px;
+  padding: 18px;
+}
+
+/* Night mode */
+body.night-mode {
+  background: #120000;
+  color: #ffdddd;
+}
+
+body.night-mode .card {
+  background: #2a0505;
+  box-shadow: 0 8px 24px rgba(80, 0, 0, 0.45);
+}
+
+body.night-mode label,
+body.night-mode #details {
+  color: #ffb3b3;
+}
+
+body.night-mode input,
+body.night-mode select {
+  background: #3a0a0a;
+  color: #ffdddd;
+  border: 1px solid #7f1d1d;
+}
+
+body.night-mode button {
+  background: #991b1b;
+  color: #ffe4e6;
+}
+
+body.night-mode .secondary-btn {
+  background: #450a0a;
+  color: #fecaca;
+  border: 1px solid #991b1b;
+}
+
+/* Day mode */
+body.day-mode {
+  background: #334155;
+  color: #e2e8f0;
+}
+
+body.day-mode .card {
+  background: #475569;
+  color: #f8fafc;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+}
+
+body.day-mode label,
+body.day-mode #details {
+  color: #cbd5e1;
+}
+
+body.day-mode input,
+body.day-mode select {
+  background: #64748b;
+  color: #f8fafc;
+  border: 1px solid #94a3b8;
+}
+
+body.day-mode button {
+  background: #0ea5e9;
+  color: #f8fafc;
+}
+
+body.day-mode .secondary-btn {
+  background: #1e293b;
+  color: #e2e8f0;
+  border: 1px solid #64748b;
+}
+
+.subtitle {
+  text-align: center;
+  color: #cbd5e1;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.version {
+  text-align: center;
+  font-size: 0.85rem;
+  color: #94a3b8;
+}
+
+.results-wrapper {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.sea-card {
+  flex: 1;
+  background: rgba(255,255,255,0.06);
+  border-radius: 14px;
+  padding: 12px;
+  text-align: center;
+  border: 1px solid rgba(255,255,255,0.08);
+}
+
+.sea-title {
+  font-size: 0.9rem;
+  color: #cbd5e1;
+  margin-bottom: 6px;
+}
+
+.sea-time {
+  font-size: 1.65rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* Day mode cards */
+body.day-mode .sea-card {
+  background: rgba(255,255,255,0.08);
+}
+
+/* Night mode cards */
+body.night-mode .sea-card {
+  background: rgba(120,0,0,0.18);
+  border: 1px solid rgba(255,120,120,0.12);
+}
+
+.footer-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+  padding: 0 4px;
+}
+
+.footer-mode {
+  font-size: 0.8rem;
+  color: #94a3b8;
+  letter-spacing: 1px;
+}
+
+.version {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
