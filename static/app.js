@@ -212,11 +212,7 @@ function toggleThemeMode() {
 
 setInitialThemeMode();
 
-// Keep service worker disabled while developing
-// if ("serviceWorker" in navigator) {
-//   navigator.serviceWorker.register("/static/sw.js");
-// }
 
 if ("serviceWorker" in navigator) {
-  navigator.serviceWorker.register("/static/sw.js");
+  navigator.serviceWorker.register("static/sw.js");
 }
